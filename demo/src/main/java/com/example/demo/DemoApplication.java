@@ -15,7 +15,7 @@ public class DemoApplication {
 
 		// Create ROOT (parent) context
 		app.addInitializers(ctx -> {
-			System.out.println("************** "+ctx.getClass()+" **************");
+			System.out.println("************** "+ ctx.getClass() +" **************");
 			ctx.setParent(
 					new org.springframework.context.annotation.AnnotationConfigApplicationContext(
 							RootConfig.class
